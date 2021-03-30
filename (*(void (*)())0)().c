@@ -21,3 +21,8 @@ int main()
 //(*(void (*)())0)()   
 //void (*)()  函数指针类型     (void (*)())0  将0强制转换为函数指针类型，0成函数指针地址
 // 调用0地址的该函数
+
+
+// void(* signal ( int, void(*)(int) ) )(int);
+// typedef void(*p)(int);名字定义为p
+//p signal(int, signal)
