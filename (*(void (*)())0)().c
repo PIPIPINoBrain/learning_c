@@ -6,6 +6,11 @@ int add(int x, int y)
 	return x + y;
 }
 
+int mul(int x, int y)
+{
+	return x * y;
+}
+
 int main()
 {
 	int a = 2, b = 3;
@@ -14,6 +19,7 @@ int main()
 	printf("%p\n", add);
 	printf("%p\n", &add);
 	int (*p)(int, int) = add;
+	int (*d[2])(int, int) = { add,mul };//函数指针数组
 	printf("%p\n", p);
 	printf("%d\n", (*p)(a, b));
 }
