@@ -29,3 +29,21 @@ int main()
 	}
 	return 0;
 }
+
+//struct stu {
+//	char name[20];
+//	int age;
+//};
+//
+//int cmp_stu(const void* e1, const void* e2)
+//{
+//	return ((struct stu*)e1)->age - ((struct stu*)e2) ->age;
+//	/*return strcmp(((struct stu*)e1)->name , ((struct stu*)e2)->name);*/
+//};
+//int main()
+//{
+//	struct stu s[3] = { {"zhangsan",20},{"lisi",30},{"wangwu",25} };
+//	int sz = sizeof(s) / sizeof(s[0]);
+//	qsort(s, sz, sizeof(s[0]), cmp_stu);
+//
+//}
