@@ -23,7 +23,19 @@ int main()
 		}
 	}
 	//释放空间
-	free(p);
-	p = NULL;
+	//free(p);
+	//p = NULL;
+	int* p1 = (int*)realloc(p,20);
+	for (i = 0; i < 20; i++)
+	{
+		*(p1 + i) = i;
+	}
+	for (i = 0; i < 20; i++)
+	{
+		printf("%d ", *(p1 + i));
+	}
+	free(p1);
+	p1 = NULL;
+	return 0;
 	return 0;
 }
